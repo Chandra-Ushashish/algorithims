@@ -1,0 +1,8 @@
+Dijsktra's algotithim 
+
+very similar to Prims algorithim of minimum spanning tree 
+
+the aim of this algorithim is to find the minimum spanning distance from the  source to the 
+other vertices of a graph 
+
+the source is always initialized as 0 and all the other vertices are intialized as infinity 
