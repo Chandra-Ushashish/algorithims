@@ -1,0 +1,31 @@
+Dijsktra's algotithim 
+
+very similar to Prims algorithim of minimum spanning tree 
+
+the aim of this algorithim is to find the minimum spanning distance from the  source to the 
+other vertices of a  weighted   graph 
+
+the source is always initialized as 0 and all the other vertices are intialized as infinity 
+then we initailize the source distannce as 0 and all the other distances as infinity 
+then we insert all distances into  the priority queue 
+then we run a while loop untill the queue is empty 
+now inside the while loop we extract the minimum node  and relax the adjacents of that node 	
+
+
+peusdo code for Dijsktra's algorithim 
+
+unction dijkstra(G, S)
+    for each vertex V in G
+        distance[V] <- infinite
+        previous[V] <- NULL
+        If V != S, add V to Priority Queue Q
+    distance[S] <- 0
+	
+    while Q IS NOT EMPTY
+        U <- Extract MIN from Q
+        for each unvisited neighbour V of U
+            tempDistance <- distance[U] + edge_weight(U, V)
+            if tempDistance < distance[V]
+                distance[V] <- tempDistance
+                previous[V] <- U
+    return distance[], previous[]
