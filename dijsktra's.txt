@@ -6,6 +6,7 @@ the aim of this algorithim is to find the minimum spanning distance from the  so
 other vertices of a  weighted   graph 
 
 the source is always initialized as 0 and all the other vertices are intialized as infinity 
+so we first create a empty priority queue or a min heap 
 then we initailize the source distannce as 0 and all the other distances as infinity 
 then we insert all distances into  the priority queue 
 then we run a while loop untill the queue is empty 
