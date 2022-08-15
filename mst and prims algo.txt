@@ -1,0 +1,24 @@
+Minimum spanning tree:-
+
+if the tree had v vertices then a mst would have a v-1 edges
+it should'nt be cyclic 
+
+Prim's alogorithim :-
+used to find minimum spanning tree of a weighted graph 
+what we do is we maintain two sets ,one set is for the vertices which are included in 
+the mst and the other one is the one not included in the mst and our goal is to move all 
+vertices from the non-included one to the included one to the included one .
+
+Pseudo code for Prim's algo:-
+
+The pseudocode for prim's algorithm shows how we create two sets
+of vertices U and V-U. U contains the list of vertices that have been visited and 
+V-U the list of vertices that haven't. 
+One by one, we move vertices from set V-U to set U by connecting the least weight edge.
+
+T = ∅;
+U = { 1 };
+while (U ≠ V)
+    let (u, v) be the lowest cost edge such that u ∈ U and v ∈ V - U;
+    T = T ∪ {(u, v)}
+    U = U ∪ {v}
