@@ -1,0 +1,90 @@
+Obejct oeriented programming 
+
+4 pillars
+1> polymorphism 
+2> Data Abstraction 
+3> Encapsulation 
+4> Inheritence
+
+polymorphism :-
+basically of two types
+compile time  and run time 
+
+compile time is static and is of two types function overloading and operater overloading 
+run time is basically dynamic  and virtual functions and method overriding come under run time polymorphism 
+
+Method overriding, on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. 
+That base function is said to be overridden.
+
+## java doesn't support operator overloading##
+
+Encapsulation :-
+
+it is the conecpt of wrapping up data and methods into one single unit .
+we use this to reduce the access to variables and data and to avoid accidetal changes to code or data 
+it is a protective shield that prevents the data from being accessed by the code outside this shield. 
+Advantages of encapsualtion include:-
+data hiding 
+reusability
+increased flexibilty
+testing code is easy 
+
+Data Abstraction :-
+Data Abstraction is the property by virtue of which only the essential details are displayed to the user. 
+The trivial or the non-essential units are not displayed to the user. Ex: A car is viewed as a car rather than its individual components.
+abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
+
+An abstract class is a class that is declared with an abstract keyword.
+An abstract method is a method that is declared without implementation.
+An abstract class may or may not have all abstract methods. Some of them can be concrete methods
+A method-defined abstract must always be redefined in the subclass, thus making overriding compulsory or making the subclass itself abstract.
+Any class that contains one or more abstract methods must also be declared with an abstract keyword.
+There can be no object of an abstract class. That is, an abstract class can not be directly instantiated with the new operator.
+An abstract class can have parameterized constructors and the default constructor is always present in an abstract class.
+
+
+
+Encapsulation vs Data Abstraction
+
+Encapsulation is data hiding(information hiding) while Abstraction is detailed hiding(implementation hiding).
+While encapsulation groups together data and methods that act upon the data, data abstraction deal with exposing the interface to the user and hiding the details of implementation.
+Encapsulated classes are java classes that follow data hiding and abstraction while We can implement abstraction by using abstract classes and interfaces. 
+Encapsulation is a procedure that takes place at the implementation level, while abstraction is a design-level process.
+
+
+Inheritence:-
+
+Inheritance is an important pillar of OOP(Object-Oriented Programming).
+It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class.
+The keyword used for inheritance is extends.
+
+ Single Inheritance: In single inheritance, subclasses inherit the features of one superclass. In the image below, class A serves as a base class for the derived class B.
+
+
+Multilevel Inheritance:-derived class will be inheriting a base class and as well as the derived class also act as the base class to other class.
+In Java, a class cannot directly access the grandparent’s members.
+
+Hierarchical Inheritance: In Hierarchical Inheritance, one class serves as a superclass (base class) for more than one subclass. 
+
+Multiple Inheritance (Through Interfaces): In Multiple inheritances, one class can have more than one superclass and inherit features from all parent classes. Please note that Java
+does not support multiple inheritances with classes. In java, we can achieve multiple inheritances only through Interfaces. 
+
+
+contsructors:-
+
+A constructor in Java is a special method that is used to initialize objects. 
+The constructor is called when an object of a class is created. It can be used to set initial values for object attributes.'
+
+constructors are of two types :-
+no argument constructor
+paramerterized constructor
+
+constructors vs functions in java :-
+
+Constructors must have the same name as the class within which it is defined while it is not necessary for the method in Java.
+Constructors do not return any type while method(s) have the return type or void if does not return any value.
+Constructors are called only once at the time of Object creation while method(s) can be called any number of times.
+
+Destructor:-
+It is a special method that automatically gets called when an object is no longer used. 
+When an object completes its life-cycle the garbage collector deletes that object and deallocates or releases the memory occupied by the object
