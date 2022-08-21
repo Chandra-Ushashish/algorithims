@@ -1,0 +1,27 @@
+Kruskal's algorithim :-
+ 
+So this is a greedy algorithim ,which is used to minimum spanning tree of a weighted 
+connected graph.
+
+So the steps to applying kruskal algo is as follows:-
+1.we need to sort the edges of the weighted graph in non-decreasing order of their weights 
+2.Then we need to choose the smallest edge and check if it performs a cycle in the spanning 
+   tree or not , if not then we add it to the list of vertces  of the minimum spanning tree
+   if it forms a cycle then we simply discrd it 
+3. we need to repeat step 2 untill the mst has (v-1) edges with v as the number of edges
+   of the spanning tree (As we remember that a mst has always 1 edge less than the total
+   number of edges of the tree)
+
+Pseudo code for Kruskal algo:-
+   
+   KRUSKAL(G):
+A = ∅
+For each vertex v ∈ G.V:
+    MAKE-SET(v)
+For each edge (u, v) ∈ G.E ordered by increasing order by weight(u, v):
+    if FIND-SET(u) ≠ FIND-SET(v):       
+    A = A ∪ {(u, v)}
+    UNION(u, v)
+return A
+
+the time complexity of kruskal algo is O(ElogV)
